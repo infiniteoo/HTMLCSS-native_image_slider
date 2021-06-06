@@ -82,6 +82,19 @@ body {
   color: #333;
 }
 
+/* media queries for mobile responsiveness */
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
 /* background images */
 .slide:first-child {
   background: url(../img/photo1.jpg) no-repeat center center/cover;
