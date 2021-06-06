@@ -38,3 +38,12 @@ const prevSlide = () => {
 
   setTimeout(() => current.classList.remove("current"));
 };
+
+// button events
+next.addEventListener("click", () => {
+  nextSlide();
+});
+
+prev.addEventListener("click", () => {
+  prevSlide();
+});
